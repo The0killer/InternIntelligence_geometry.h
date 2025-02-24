@@ -55,3 +55,89 @@ To compile the code, use the following command:
 
 ```bash
 g++ main.cpp geometry.cpp -o geometry_program
+```
+
+
+
+
+
+
+## Function Documentation
+
+The library includes the following main functions:
+
+### 2D Functions:
+
+- **`SquarePer(float x)`**:  
+  Returns the perimeter of a square with side length `x`.
+
+- **`SquareAre(float x)`**:  
+  Returns the area of a square with side length `x`.
+
+- **`RectanglePer(float x, float y)`**:  
+  Returns the perimeter of a rectangle with sides `x` and `y`.
+
+- **`RectangleAre(float x, float y)`**:  
+  Returns the area of a rectangle with sides `x` and `y`.
+
+- **`CirclePer(float r)`**:  
+  Returns the perimeter (circumference) of a circle with radius `r`.
+
+- **`CircleAre(float r)`**:  
+  Returns the area of a circle with radius `r`.
+
+- **`TrianglePer(float x, float y, float z)`**:  
+  Returns the perimeter of a triangle with sides `x`, `y`, and `z`.
+
+- **`TriangleAre(float b, float h)`**:  
+  Returns the area of a triangle with base `b` and height `h`.
+
+### 3D Functions:
+
+- **`SphereAre(float r)`**:  
+  Returns the surface area of a sphere with radius `r`.
+
+- **`SphereVol(float r)`**:  
+  Returns the volume of a sphere with radius `r`.
+
+- **`CubeAre(float x)`**:  
+  Returns the surface area of a cube with side length `x`.
+
+- **`CubeVol(float x)`**:  
+  Returns the volume of a cube with side length `x`.
+
+- **`CylinderAre(float h, float r)`**:  
+  Returns the surface area of a cylinder with height `h` and radius `r`.
+
+- **`CylinderVol(float h, float r)`**:  
+  Returns the volume of a cylinder with height `h` and radius `r`.
+
+- **`ConeAre(float r, float l)`**:  
+  Returns the surface area of a cone with radius `r` and slant height `l`.
+
+- **`ConeVol(float r, float h)`**:  
+  Returns the volume of a cone with radius `r` and height `h`.
+
+### 4D Functions:
+
+- **`cubeSurVol(float x)`**:  
+  Returns the surface area of a 4D hypercube (Tesseract) with side length `x`.
+
+- **`cubeVol(float x)`**:  
+  Returns the volume of a 4D hypercube (Tesseract) with side length `x`.
+
+- **`sphereSurVol(float r)`**:  
+  Returns the surface area of a 4D hypersphere with radius `r`.
+
+- **`sphereVol(float r)`**:  
+  Returns the volume of a 4D hypersphere with radius `r`.
+
+- **`Simplex(float t)`**:  
+  Returns the volume of a 4D simplex with side length `t`.
+
+---
+
+## License
+
+This library is licensed under the MIT License. You are free to use, modify, and distribute the code in your projects, both for personal and commercial purposes. If you modify the library or use it in a project, please give credit to the original author.
+
