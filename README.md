@@ -1,137 +1,57 @@
-Geometry Library
-This is a C++ Geometry Library that provides functions to calculate the surface area, volume, perimeter, and area of various 2D, 3D, and 4D shapes. The library includes functions for calculating the geometric properties of spheres, cylinders, cones, cubes, rectangles, triangles, and many other shapes, as well as constants for 4D geometry.
+# Geometry Library for 2D, 3D, and 4D Shapes
 
-Features
-2D Geometry: Calculations for square, rectangle, triangle, circle, parallelogram, trapezoid, and rhombus.
-3D Geometry: Calculations for cube, cuboid, sphere, cylinder, cone, pyramid, and more.
-4D Geometry: Calculations for 4D hypercube (tesseract), 4D hypersphere, and 4D simplex.
-Includes pre-defined constants for 4D calculations to improve readability and performance.
-Prerequisites
-C++11 or later
-A C++ compiler (GCC, Clang, Visual Studio, etc.)
-Usage
-1. Include the library header
-To use the library, include the geometry.h header in your C++ project:
+## Overview
 
-cpp
-Copy
-Edit
-#include "geometry.h"
-2. Call the appropriate function
-You can now call any of the available functions in your code. Here are some examples:
+The **Geometry Library** is a C++ library designed to simplify geometric calculations for various shapes in 2D, 3D, and even 4D space. It includes functions to compute properties such as area, perimeter, surface area, and volume for shapes like cubes, spheres, cylinders, pyramids, and more. This library can be easily integrated into any C++ project requiring geometric calculations.
 
-2D Geometry Examples:
-Square Perimeter:
+## Features
 
-cpp
-Copy
-Edit
-float squarePerimeter = SquarePer(4);
-Rectangle Area:
+### 1. **2D Geometry Functions**
+   - **Square**: Perimeter and area calculations.
+   - **Rectangle**: Perimeter and area calculations.
+   - **Circle**: Perimeter (circumference) and area calculations.
+   - **Triangle**: Perimeter and area calculations for various triangle types.
+   - **Parallelogram**: Perimeter and area calculations.
+   - **Trapezoid**: Perimeter and area calculations.
+   - **Rhombus**: Perimeter and area calculations.
 
-cpp
-Copy
-Edit
-float rectangleArea = RectangleAre(4, 5);
-Circle Area:
+### 2. **3D Geometry Functions**
+   - **Cube**: Surface area and volume calculations.
+   - **Cuboid**: Surface area and volume calculations.
+   - **Sphere**: Surface area and volume calculations.
+   - **Cylinder**: Surface area and volume calculations.
+   - **Cone**: Surface area and volume calculations.
+   - **Pyramid**: Surface area and volume calculations.
 
-cpp
-Copy
-Edit
-float circleArea = CircleAre(5);
-3D Geometry Examples:
-Cube Volume:
+### 3. **4D Geometry Functions**
+   - **Hypercube (Tesseract)**: Surface area and volume calculations.
+   - **Hypersphere**: Surface area and volume calculations.
+   - **4D Simplex**: Volume calculations for a 4D simplex (tetrahedron).
 
-cpp
-Copy
-Edit
-float cubeVolume = cubeVol(5);
-Sphere Surface Area:
+## Constants
 
-cpp
-Copy
-Edit
-float sphereSurfaceArea = SphereAre(5);
-Cylinder Volume:
+To improve performance and code readability, the library includes several constants:
+- **PI**: Value of π for geometric calculations.
+- **HYPER_SUR_CON**: Constant used to calculate the surface area of a 4D hypersphere.
+- **HYPER_VOLU_CON**: Constant used to calculate the volume of a 4D hypersphere.
+- **SIMPLEX_CON**: Constant used to calculate the volume of a 4D simplex.
 
-cpp
-Copy
-Edit
-float cylinderVolume = CylinderVol(7, 3);
-4D Geometry Examples:
-4D Hypercube Volume:
+## Installation
 
-cpp
-Copy
-Edit
-float tesseractVolume = cubeVol(5);  // Tesseract (4D hypercube)
-4D Hypersphere Volume:
+### Step 1: Clone or Download the Repository
+Clone the repository or download the ZIP file containing the C++ source files.
 
-cpp
-Copy
-Edit
-float hypersphereVolume = sphereVol(3);  // Hypersphere (4D)
-Available Functions
-The library provides the following functions:
+### Step 2: Include Files in Your Project
+Add the following files to your project:
+- **geometry.h**: The header file that contains function declarations.
+- **geometry.cpp**: The implementation file that contains function definitions.
+- **main.cpp**: The example code to test the library functions.
 
-Constants for 4D Geometry
-constexpr float PI: The mathematical constant Pi.
-constexpr float HYPER_SUR_CON: Constant for surface area of 4D hypersphere.
-constexpr float HYPER_VOLU_CON: Constant for volume of 4D hypersphere.
-constexpr float SIMPLEX_CON: Constant for volume of 4D simplex.
-4D Geometry Functions
-float cubeSurVol(float x): Surface area of a 4D hypercube (Tesseract).
-float cubeVol(float x): Volume of a 4D hypercube (Tesseract).
-float sphereSurVol(float r): Surface area of a 4D hypersphere.
-float sphereVol(float r): Volume of a 4D hypersphere.
-float Simplex(float t): Volume of a 4D simplex (Tetrahedron).
-3D Geometry Functions
-float cubeAre(float x): Surface area of a cube.
-float cubeVol(float x): Volume of a cube.
-float CuboidAre(float l, float w, float h): Surface area of a cuboid.
-float CuboidVol(float l, float w, float h): Volume of a cuboid.
-float SphereAre(float r): Surface area of a sphere.
-float SphereVol(float r): Volume of a sphere.
-float CylinderAre(float h, float r): Surface area of a cylinder.
-float CylinderVol(float h, float r): Volume of a cylinder.
-float ConeAre(float r, float l): Surface area of a cone.
-float ConeVol(float r, float h): Volume of a cone.
-2D Geometry Functions
-float SquarePer(float x): Perimeter of a square.
-float SquareAre(float x): Area of a square.
-float RectanglePer(float x, float y): Perimeter of a rectangle.
-float RectangleAre(float x, float y): Area of a rectangle.
-float TrianglePer(float x, float y, float z): Perimeter of a triangle.
-float TriangleAre(float b, float h): Area of a triangle.
-float CirclePer(float r): Circumference of a circle.
-float CircleAre(float r): Area of a circle.
-float ParallPer(float x, float y): Perimeter of a parallelogram.
-float ParallAre(float x, float y): Area of a parallelogram.
-float TrapezPer(float x, float y, float z, float w): Perimeter of a trapezoid.
-float TrapezAre(float x, float y, float h): Area of a trapezoid.
-float RhombusPer(float x): Perimeter of a rhombus.
-float RhombusAre(float x, float y): Area of a rhombus.
-Example Code
-cpp
-Copy
-Edit
-#include "geometry.h"
-#include <iostream>
+You can either place these files in your project folder or configure your project to reference these files.
 
-int main() {
-    // Example: Calculate the volume of a sphere
-    float radius = 5.0;
-    float volume = SphereVol(radius);
-    
-    std::cout << "The volume of the sphere with radius " << radius << " is: " << volume << std::endl;
+### Step 3: Compile and Build
 
-    // Example: Calculate the surface area of a cube
-    float sideLength = 4.0;
-    float surfaceArea = cubeAre(sideLength);
-    
-    std::cout << "The surface area of the cube with side length " << sideLength << " is: " << surfaceArea << std::endl;
+To compile the code, use the following command:
 
-    return 0;
-}
-License
-This library is licensed under the MIT License. You can freely use, modify, and distribute the library in your projects. However, there is no warranty for any issues arising from its use.
+```bash
+g++ main.cpp geometry.cpp -o geometry_program
